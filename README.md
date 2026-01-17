@@ -36,4 +36,23 @@ It was completed as part of my internship at **Synnefo Solutions**.
 ---
 
 ## Project Structure
+Nginx-project/
+├── website/
+│ ├── index.html
+│ └── health.html
+├── userdata/
+│ └── nginx install.sh
+├── screenshots/
+└── README.md
+
+---
+
+## Learning Outcomes
+
+- Hands-on experience with AWS cloud infrastructure  
+- Understanding high availability and load balancing  
+- Automation using EC2 User Data scripts  
+- Secure access using IAM Roles  
+- Monitoring and troubleshooting using CloudWatch
+
 
