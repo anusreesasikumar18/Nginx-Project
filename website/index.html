@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Highly Available Web Application</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #232f3e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #d5dbdb;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      color: #232f3e;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .status {
+      background-color: #e8f8f5;
+      border-left: 5px solid #2ecc71;
+      padding: 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      color: #145a32;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #232f3e;
+      color: white;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Highly Available Web Application</h1>
+    <p>Deployed using AWS EC2, ALB, S3, and VPC</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Project Overview</h2>
+      <p>
+        This web application demonstrates a highly available architecture built on Amazon Web Services.
+        The application is served through an Application Load Balancer, distributing traffic across
+        multiple EC2 instances running Nginx.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>AWS Services Used</h2>
+      <ul>
+        <li>VPC & Subnets – Custom networking across multiple Availability Zones</li>
+        <li>EC2 – Nginx web servers</li>
+        <li>S3 – Centralized storage for website files</li>
+        <li>Application Load Balancer – Traffic distribution and fault tolerance</li>
+        <li>IAM Roles – Secure access between services</li>
+        <li>CloudWatch – Monitoring and health metrics</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Automation & Availability</h2>
+      <ul>
+        <li>Automated deployment using EC2 User Data</li>
+        <li>Website content pulled from Amazon S3</li>
+        <li>Health check configured using <strong>/health.html</strong></li>
+        <li>High availability ensured through multi-AZ design</li>
+      </ul>
+    </div>
+
+    <div class="status">
+      Application Status: Healthy ✔ (Load Balancer Health Check Passed)
+    </div>
+
+  </div>
+
+  <footer>
+    Internship Project | Synnefo Solutions | AWS Cloud
+  </footer>
+
+</body>
+</html>
