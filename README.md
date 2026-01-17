@@ -40,7 +40,7 @@ Nginx-project/
 ├── website/
 │ ├── index.html
 │ └── health.html
-├── userdata/
+├── user data/
 │ └── nginx install.sh
 ├── screenshots/
 └── README.md
